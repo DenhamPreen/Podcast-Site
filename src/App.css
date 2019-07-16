@@ -2,9 +2,11 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #dc3545;
-  --dark-color: #333333;
-  --light-color: #f4f4f4;
+  --primary-color: 	#404552;
+  --dark-color: 	#383c4a;
+  --dark-light-color: #4b5162;
+  --dark-light-light-color: #7c818c;
+  --light-color: #5294e2;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -411,4 +413,14 @@ table th {
     text-align: center;
     justify-content: center;
   }
+}
+
+
+.footer-player{
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
 }
