@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import Podcasts from './components/pages/Podcasts';
+import Episodes from './components/pages/Episodes';
 import NotFound from './components/pages/NotFound';
 import Footer from './components/layout/Footer';
 
@@ -14,14 +14,14 @@ const App = () => {
         <Router>
           <div className='bg-dark' style={{height:"100vh"}}>
             <Navbar />            
-              <div className="container">
+              <div>
               <Switch>
                 <Route exact path='/' component={Home} />
-                <Route exact path='/Podcasts' component={Podcasts} />
+                <Route exact path='/episodes' component={Episodes} />
                 <Route exact path='/About' component={About} />
                 <Route component={NotFound} />
               </Switch>
-              <Footer/>            
+              {/* <Footer/>             */}
               </div>
           </div>
         </Router>

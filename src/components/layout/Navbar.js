@@ -16,7 +16,7 @@ const Navbar = ({ icon, title }) => {
           <Link to='/about'>About</Link>
         </li>
         <li>
-          <Link to='/podcasts'>Podcasts</Link>
+          <Link to='/episodes'>Episodes</Link>
         </li>
       </ul>
     </nav>
@@ -24,7 +24,7 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: 'Denham and Jon Jon Talk Startups',
+  title: 'Startups Talks with Denham and Jon Jon',
   icon: 'fas fa-podcast'
 };
 

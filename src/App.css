@@ -25,6 +25,11 @@ body {
   color: #333;
 }
 
+.dark-gradient{
+  background: linear-gradient(to bottom, var(--dark-light-light-color) 0%, var(--primary-color) 100%);
+  /* , radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) var(--primary-color);  */
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -365,12 +370,15 @@ table th {
 }
 
 .navbar a {
-  color: #fff;
   padding: 0.45rem;
-  margin: 0 0.25rem;
+  margin: 0 0.25rem; 
 }
 
-.navbar a:hover {
+a {
+  color: #fff;
+}
+
+a:hover {
   color: var(--light-color);
 }
 
@@ -412,9 +420,13 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+    text-transform: uppercase;
   }
 }
 
+.navbar ul{
+  text-transform: uppercase;
+}
 
 .footer-player{
     height: 10vh;
@@ -423,4 +435,17 @@ table th {
     bottom: 0;
     width: 100%;
     background-color: var(--primary-color);
+}
+
+.home h1{
+  font-size: 3em;
+}
+
+.home p{
+  font-size: 1.2em;
+}
+
+.home img{
+  padding:0.5rem 2rem ;
+  width: 100%;
 }
