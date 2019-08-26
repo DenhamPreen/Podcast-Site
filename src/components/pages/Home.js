@@ -19,7 +19,7 @@ const Home = () => {
             and leaders of tech start ups that are disrupting their industries.
             <br />
             <br />
-            Season 1 focusses on start ups based in Cape Town, South Africa.
+            <strong>Season 1</strong> focusses on start ups based in Cape Town, South Africa.
           </p>
           <br />
           <ul>
