@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Podcast-Site/static/css/main.9f038d2b.chunk.css",
-    "main.js": "/Podcast-Site/static/js/main.c0550b5b.chunk.js",
-    "main.js.map": "/Podcast-Site/static/js/main.c0550b5b.chunk.js.map",
-    "runtime~main.js": "/Podcast-Site/static/js/runtime~main.1eef120d.js",
-    "runtime~main.js.map": "/Podcast-Site/static/js/runtime~main.1eef120d.js.map",
-    "static/js/2.5aa48b02.chunk.js": "/Podcast-Site/static/js/2.5aa48b02.chunk.js",
-    "static/js/2.5aa48b02.chunk.js.map": "/Podcast-Site/static/js/2.5aa48b02.chunk.js.map",
-    "index.html": "/Podcast-Site/index.html",
-    "precache-manifest.ba4e7987dfe7ae2e80500b3bb866e9ca.js": "/Podcast-Site/precache-manifest.ba4e7987dfe7ae2e80500b3bb866e9ca.js",
-    "service-worker.js": "/Podcast-Site/service-worker.js",
-    "static/css/main.9f038d2b.chunk.css.map": "/Podcast-Site/static/css/main.9f038d2b.chunk.css.map",
-    "static/media/applepodcasts.png": "/Podcast-Site/static/media/applepodcasts.583536fa.png",
-    "static/media/googlepodcasts.png": "/Podcast-Site/static/media/googlepodcasts.430603a6.png",
-    "static/media/spotifypodcasts.png": "/Podcast-Site/static/media/spotifypodcasts.88f0f2d6.png",
-    "static/media/test.mp3": "/Podcast-Site/static/media/test.dd0fd932.mp3"
+    "main.css": "/static/css/main.9f038d2b.chunk.css",
+    "main.js": "/static/js/main.44921d1f.chunk.js",
+    "main.js.map": "/static/js/main.44921d1f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.5aa48b02.chunk.js": "/static/js/2.5aa48b02.chunk.js",
+    "static/js/2.5aa48b02.chunk.js.map": "/static/js/2.5aa48b02.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b60842a7721658b27677893c1995be24.js": "/precache-manifest.b60842a7721658b27677893c1995be24.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9f038d2b.chunk.css.map": "/static/css/main.9f038d2b.chunk.css.map",
+    "static/media/applepodcasts.png": "/static/media/applepodcasts.583536fa.png",
+    "static/media/googlepodcasts.png": "/static/media/googlepodcasts.430603a6.png",
+    "static/media/spotifypodcasts.png": "/static/media/spotifypodcasts.88f0f2d6.png",
+    "static/media/test.mp3": "/static/media/test.dd0fd932.mp3"
   }
 }
