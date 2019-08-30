@@ -11,14 +11,14 @@ import './App.css';
 
 const App = () => {
   return (
-        <Router basename={'/Podcast-Site'}>
+        <Router>
           <div className='bg-dark' style={{height:"100vh"}}>
             <Navbar />            
               <div>
               <Switch>
-                <Route exact path='https://denhampreen.github.io/Podcast-Site/' component={Home} />
-                <Route exact path='https://denhampreen.github.io/Podcast-Site/episodes' component={Episodes} />
-                <Route exact path='https://denhampreen.github.io/Podcast-Site/About' component={About} />
+                <Route exact path='/' component={Home} />
+                <Route exact path='/episodes' component={Episodes} />
+                <Route exact path='/About' component={About} />
                 <Route component={NotFound} />
               </Switch>
               {/* <Footer/>             */}

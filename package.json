@@ -1,8 +1,8 @@
 {
-  "name": "DenhamAndJonJonTalkStartups",
+  "name": "whereitstartedwithdenhamandjonjon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://denhampreen.github.io/Podcast-Site/",
+  "homepage": "https://whereitstarted.io",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.1.1",

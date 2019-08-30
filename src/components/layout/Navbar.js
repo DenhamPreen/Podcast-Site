@@ -24,7 +24,7 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: 'Startups Talks with Denham and Jon Jon',
+  title: 'Where It Started with Denham and Jon Jon',
   icon: 'fas fa-podcast'
 };
 
