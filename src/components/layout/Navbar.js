@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ icon, title }) => {
   return (
-    <nav className='navbar' style={{height: '10vh'}}>
+    <nav className='navbar' style={{ height: '10vh' }}>
       <h1>
         <i className={icon} /> {title}
       </h1>
@@ -15,16 +15,13 @@ const Navbar = ({ icon, title }) => {
         <li>
           <Link to='/about'>About</Link>
         </li>
-        <li>
-          <Link to='/episodes'>Episodes</Link>
-        </li>
       </ul>
     </nav>
   );
 };
 
 Navbar.defaultProps = {
-  title: 'Where It Started with Denham and Jon Jon',
+  title: ' Where It Started with Denham and Jon Jon',
   icon: 'fas fa-podcast'
 };
 

@@ -2,8 +2,8 @@
 
 /* Global Styles */
 :root {
-  --primary-color: 	#404552;
-  --dark-color: 	#383c4a;
+  --primary-color: #404552;
+  --dark-color: #383c4a;
   --dark-light-color: #4b5162;
   --dark-light-light-color: #7c818c;
   --light-color: #5294e2;
@@ -25,8 +25,12 @@ body {
   color: #333;
 }
 
-.dark-gradient{
-  background: linear-gradient(to bottom, var(--dark-light-light-color) 0%, var(--primary-color) 100%);
+.dark-gradient {
+  background: linear-gradient(
+    to bottom,
+    var(--dark-light-light-color) 0%,
+    var(--primary-color) 100%
+  );
   /* , radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) var(--primary-color);  */
 }
 
@@ -371,7 +375,7 @@ table th {
 
 .navbar a {
   padding: 0.45rem;
-  margin: 0 0.25rem; 
+  margin: 0 0.25rem;
 }
 
 a {
@@ -424,28 +428,28 @@ a:hover {
   }
 }
 
-.navbar ul{
+.navbar ul {
   text-transform: uppercase;
 }
 
-.footer-player{
-    height: 10vh;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--primary-color);
+.footer-player {
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--primary-color);
 }
 
-.home h1{
+.home h1 {
   font-size: 3em;
 }
 
-.home p{
+.home p {
   font-size: 1.2em;
 }
 
-.home img{
-  padding:0.5rem 2rem ;
+.home img {
+  padding: 0.5rem 2rem;
   width: 100%;
 }
