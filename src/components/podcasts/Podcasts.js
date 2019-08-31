@@ -2,28 +2,36 @@ import React, { Component } from 'react';
 import PodcastItem from './PodcastItem';
 
 export default class Podcasts extends Component {
+
+  // JONJON this cant live here the way we want to make it, 
+  // This needs to be kept in global state  
+
   state = {
     episodes: [
       {
-        login: 'Invictus Capital',
+        path: 'invictuscapital',
+        title: 'Invictus Capital',
         season_id: 1,
         episode_id: 1,
         avatar_url: 'https://avatars3.githubusercontent.com/u/20556729?v=4'
       },
       {
-        login: 'HouseMe',
+        path: 'houseme',
+        title: 'HouseMe',
         season_id: 1,
         episode_id: 2,
         avatar_url: 'https://avatars3.githubusercontent.com/u/26438203?v=4'
       },
       {
-        login: 'Molecule',
+        path: 'molecule',
+        title: 'Molecule',
         season_id: 1,
         episode_id: 3,
         avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4'
       },
       {
-        login: 'PocketJam',
+        path: 'pocketjam',
+        title: 'PocketJam',
         season_id: 1,
         episode_id: 4,
         avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4'

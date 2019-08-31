@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import Episodes from './components/pages/Episodes';
 import NotFound from './components/pages/NotFound';
 import Footer from './components/layout/Footer';
+import Episode from './components/podcasts/Episode';
 
 import './App.css';
 
@@ -17,8 +17,8 @@ const App = () => {
         <div className='container'>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/episodes' component={Episodes} />
-            <Route exact path='/About' component={About} />
+            <Route exact path='/season/:season_id/episode/:episode_id' component={Episode} />            
+            <Route exact path='/About' component={About} />            
             <Route component={NotFound} />
           </Switch>
           {/* <Footer/>             */}
