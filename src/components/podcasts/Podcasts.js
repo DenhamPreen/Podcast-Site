@@ -1,58 +1,34 @@
-import React, { Component } from 'react';
+import React, { useContext, useEffect } from 'react';
 import PodcastItem from './PodcastItem';
+import EpisodeContext from '../../context/episode/episodeContext';
 
-export default class Podcasts extends Component {
+const Podcasts = () => {
+  const episodeContext = useContext(EpisodeContext);
 
-  // JONJON this cant live here the way we want to make it, 
-  // This needs to be kept in global state  
+  // const { searchUsers } = episodeContext;
+  // useEffect(() => {
+  //   searchUsers('text');
+  // }, []);
 
-  state = {
-    episodes: [
-      {
-        path: 'invictuscapital',
-        title: 'Invictus Capital',
-        season_id: 1,
-        episode_id: 1,
-        avatar_url: 'https://avatars3.githubusercontent.com/u/20556729?v=4'
-      },
-      {
-        path: 'houseme',
-        title: 'HouseMe',
-        season_id: 1,
-        episode_id: 2,
-        avatar_url: 'https://avatars3.githubusercontent.com/u/26438203?v=4'
-      },
-      {
-        path: 'molecule',
-        title: 'Molecule',
-        season_id: 1,
-        episode_id: 3,
-        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4'
-      },
-      {
-        path: 'pocketjam',
-        title: 'PocketJam',
-        season_id: 1,
-        episode_id: 4,
-        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4'
-      }
-    ]
-  };
-  render() {
+  const { loading, users } = episodeContext;
+
+  if (loading) {
+    return <p>loading...</p>;
+  } else {
     return (
-      <div>
-        <div style={userStyle}>
-          {this.state.episodes.map(episode => (
-            <PodcastItem key={episode.episode_id} episode={episode} />
-          ))}
-        </div>
+      <div style={userStyle}>
+        {users.map(user => (
+          <PodcastItem key={user.id} user={user} />
+        ))}
       </div>
     );
   }
-}
+};
 
 const userStyle = {
   display: 'grid',
   gridTemplateColumns: 'repeat(3,1fr)',
   gridGap: '1rem'
 };
+
+export default Podcasts;

@@ -1,26 +1,25 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useContext } from 'react';
+import EpisodeContext from '../../context/episode/episodeContext';
 
 const Episode = ({ match }) => {
-    
-    useEffect(() => {
-        // This is where you call a function that matches the season id and episode id to an episode that is called in state
-        /*
-            // this function would not live here but need to be called
-            getEpisodeData(season_id, episode_id){
-                return episode specific data;
-            }
-        */
-        console.log(match.params.season_id);
-        console.log(match.params.episode_id);
-        // eslint-disable-next-line
-    }, []);
+  const episodeContext = useContext(EpisodeContext);
 
-    return (
-        <div>
-            <p>This is from Season : {match.params.season_id}</p>
-            <p>This is from Episode : {match.params.episode_id}</p>
-        </div>
-    )
-}
+  const { getUser, loading, user } = episodeContext;
 
-export default Episode
+  useEffect(() => {
+    getUser(match.params.episode_id);
+    //console.log(match.params.episode_id);
+  }, []);
+
+  // this is now working and pulling from the context api
+  const { path } = user;
+
+  return (
+    <div>
+      <p>This is from Episode : {match.params.episode_id}</p>
+      <p>This is it boy: {path}</p>
+    </div>
+  );
+};
+
+export default Episode;

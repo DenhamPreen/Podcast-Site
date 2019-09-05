@@ -7,24 +7,28 @@ import NotFound from './components/pages/NotFound';
 import Footer from './components/layout/Footer';
 import Episode from './components/podcasts/Episode';
 
+import EpisodeState from './context/episode/EpisodeState';
+
 import './App.css';
 
 const App = () => {
   return (
-    <Router>
-      <div className='bg-dark' style={{ height: '100vh' }}>
-        <Navbar />
-        <div className='container'>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/season/:season_id/episode/:episode_id' component={Episode} />            
-            <Route exact path='/About' component={About} />            
-            <Route component={NotFound} />
-          </Switch>
-          {/* <Footer/>             */}
+    <EpisodeState>
+      <Router>
+        <div className='bg-dark' style={{ height: '100vh' }}>
+          <Navbar />
+          <div className='container'>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/episode/:episode_id' component={Episode} />
+              <Route exact path='/About' component={About} />
+              <Route component={NotFound} />
+            </Switch>
+            {/* <Footer/>             */}
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </EpisodeState>
   );
 };
 
