@@ -1,22 +1,11 @@
 import React, { useReducer } from 'react';
 import EpisodeContext from './episodeContext';
 import EpisodeReducer from './episodeReducer';
-import { SEARCH_USERS, SET_LOADING, GET_USER } from '../types';
+import { GET_EPISODES, GET_EPISODE } from '../types';
 
 const EpisodeState = props => {
   const initialState = {
-    users: [],
-    user: {},
-    loading: false
-  };
-
-  const [state, dispatch] = useReducer(EpisodeReducer, initialState);
-
-  // declaring our state here. Might be a better Idea to do it in intial state
-  // but didnt work last time i tried this.
-
-  let data = {
-    items: [
+    episodes: [
       {
         path: 'invictuscapital',
         title: 'Invictus Capital',
@@ -45,40 +34,33 @@ const EpisodeState = props => {
         episode_id: 4,
         avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4'
       }
-    ]
+    ],
+    episode: {}
   };
 
-  // Search Users
-  const searchUsers = async text => {
-    setLoading();
+  const [state, dispatch] = useReducer(EpisodeReducer, initialState);
 
+  const getEpisodes = async text => {
     dispatch({
-      type: SEARCH_USERS,
-      payload: data.items
+      type: GET_EPISODES,
+      payload: state.episodes
     });
   };
 
-  // Get User
-  const getUser = async episode_id => {
-    setLoading();
-
+  const getEpisode = async episode_id => {
     dispatch({
-      type: GET_USER,
-      payload: data.items[episode_id - 1]
+      type: GET_EPISODE,
+      payload: state.episodes[episode_id - 1]
     });
   };
-
-  // Set Loading
-  const setLoading = () => dispatch({ type: SET_LOADING });
 
   return (
     <EpisodeContext.Provider
       value={{
-        users: state.users,
-        user: state.user,
-        loading: state.loading,
-        searchUsers,
-        getUser
+        episodes: state.episodes,
+        episode: state.episode,
+        getEpisodes,
+        getEpisode
       }}
     >
       {props.children}

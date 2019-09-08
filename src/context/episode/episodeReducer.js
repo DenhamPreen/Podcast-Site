@@ -1,23 +1,18 @@
-import { SEARCH_USERS, SET_LOADING, GET_USER } from '../types';
+import { GET_EPISODES, GET_EPISODE } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    case SEARCH_USERS:
+    case GET_EPISODES:
       return {
         ...state,
-        users: action.payload,
-        loading: false
+        episodes: action.payload
+        //loading: false
       };
-    case GET_USER:
+    case GET_EPISODE:
       return {
         ...state,
-        user: action.payload,
-        loading: false
-      };
-    case SET_LOADING:
-      return {
-        ...state, //copying state , spread operator
-        loading: true
+        episode: action.payload
+        //loading: false
       };
     default:
       return state;

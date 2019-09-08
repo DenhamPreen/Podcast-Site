@@ -4,15 +4,13 @@ import EpisodeContext from '../../context/episode/episodeContext';
 const Episode = ({ match }) => {
   const episodeContext = useContext(EpisodeContext);
 
-  const { getUser, loading, user } = episodeContext;
+  const { getEpisode, episode } = episodeContext;
 
   useEffect(() => {
-    getUser(match.params.episode_id);
-    //console.log(match.params.episode_id);
+    getEpisode(match.params.episode_id);
   }, []);
 
-  // this is now working and pulling from the context api
-  const { path } = user;
+  const { path } = episode;
 
   return (
     <div>

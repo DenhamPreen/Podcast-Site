@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-const PodcastItem = ({ user: { title, episode_id, avatar_url } }) => {
+const PodcastItem = ({ episode: { title, episode_id, avatar_url } }) => {
   return (
     <div className='card text-center'>
       <img

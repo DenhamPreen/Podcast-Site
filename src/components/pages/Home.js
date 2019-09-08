@@ -7,9 +7,9 @@ import EpisodeContext from '../../context/episode/episodeContext';
 
 const Home = () => {
   const episodeContext = useContext(EpisodeContext);
-  const { searchUsers } = episodeContext;
+  const { getEpisodes } = episodeContext;
   useEffect(() => {
-    searchUsers('text');
+    getEpisodes('text');
   }, []);
 
   return (
