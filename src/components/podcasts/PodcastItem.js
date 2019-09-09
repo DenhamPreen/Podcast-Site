@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PodcastItem = ({ episode: { title, episode_id, avatar_url } }) => {
+const PodcastItem = ({
+  episode: { title, season_id, episode_id, avatar_url, description }
+}) => {
   return (
     <div className='card text-center'>
       <img
@@ -11,6 +13,9 @@ const PodcastItem = ({ episode: { title, episode_id, avatar_url } }) => {
         style={{ width: '90px' }}
       />
       <h3>{title}</h3>
+      <h6>
+        s{season_id}e{episode_id}
+      </h6>
       <div>
         <Link
           to={`/episode/${episode_id}`}

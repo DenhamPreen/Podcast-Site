@@ -6,7 +6,7 @@
   --dark-color: #383c4a;
   --dark-light-color: #4b5162;
   --dark-light-light-color: #7c818c;
-  --light-color: #5294e2;
+  --light-color: #6a7e96;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -269,10 +269,21 @@ img {
 .badge-light,
 .alert-light {
   background: var(--light-color);
-  color: #333;
+  color: rgb(207, 205, 205);
 }
 
-.btn-dark,
+/* .btn-dark,
+.bg-dark,
+.badge-dark,
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+} */
+
+.btn-dark {
+  background: rgba(34, 34, 34, 0.548);
+  color: rgb(255, 255, 255);
+}
 .bg-dark,
 .badge-dark,
 .alert-dark {

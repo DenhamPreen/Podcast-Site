@@ -11,28 +11,51 @@ const EpisodeState = props => {
         title: 'Invictus Capital',
         season_id: 1,
         episode_id: 1,
-        avatar_url: 'https://avatars3.githubusercontent.com/u/20556729?v=4'
+        //avatar_url: 'https://whereitstarted.io/assets/images/invictus.jpg'
+        avatar_url: 'https://avatars3.githubusercontent.com/u/26438203?v=4',
+        description:
+          'A complete range of fund choices for the investor wanting diversified exposure to the cryptocurrency market.',
+        website_url: 'https://invictuscapital.com',
+        location: 'Cape Town'
       },
       {
         path: 'houseme',
-        title: 'HouseMe',
+        title: 'HouseME',
         season_id: 1,
         episode_id: 2,
-        avatar_url: 'https://avatars3.githubusercontent.com/u/26438203?v=4'
+        //avatar_url: 'https://whereitstarted.io/assets/images/houseme.png'
+        avatar_url: 'https://avatars3.githubusercontent.com/u/26438203?v=4',
+        description:
+          'HouseME is a digital platform connecting dream tenants to great landlords.',
+        website_url: 'https://house.me',
+        location: 'Cape Town'
       },
       {
         path: 'molecule',
         title: 'Molecule',
         season_id: 1,
         episode_id: 3,
-        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4'
+        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4',
+        website_url: 'https://molecule.io',
+        location: 'Cape Town'
       },
       {
         path: 'pocketjam',
         title: 'PocketJam',
         season_id: 1,
         episode_id: 4,
-        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4'
+        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4',
+        website_url: 'https://pocketjam.io',
+        location: 'Cape Town'
+      },
+      {
+        path: 'ucook',
+        title: 'Ucook',
+        season_id: 1,
+        episode_id: 5,
+        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4',
+        website_url: 'https://www.ucook.co.za',
+        location: 'Cape Town'
       }
     ],
     episode: {}
@@ -40,7 +63,7 @@ const EpisodeState = props => {
 
   const [state, dispatch] = useReducer(EpisodeReducer, initialState);
 
-  const getEpisodes = async text => {
+  const getEpisodes = () => {
     dispatch({
       type: GET_EPISODES,
       payload: state.episodes
