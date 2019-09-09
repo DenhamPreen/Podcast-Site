@@ -11,8 +11,7 @@ const EpisodeState = props => {
         title: 'Invictus Capital',
         season_id: 1,
         episode_id: 1,
-        //avatar_url: 'https://whereitstarted.io/assets/images/invictus.jpg'
-        avatar_url: 'https://avatars3.githubusercontent.com/u/26438203?v=4',
+        avatar_url: '/assets/images/invictus.jpg',        
         description:
           'A complete range of fund choices for the investor wanting diversified exposure to the cryptocurrency market.',
         website_url: 'https://invictuscapital.com',
@@ -23,8 +22,7 @@ const EpisodeState = props => {
         title: 'HouseME',
         season_id: 1,
         episode_id: 2,
-        //avatar_url: 'https://whereitstarted.io/assets/images/houseme.png'
-        avatar_url: 'https://avatars3.githubusercontent.com/u/26438203?v=4',
+        avatar_url: '/assets/images/houseme.png',        
         description:
           'HouseME is a digital platform connecting dream tenants to great landlords.',
         website_url: 'https://house.me',
@@ -35,7 +33,7 @@ const EpisodeState = props => {
         title: 'Molecule',
         season_id: 1,
         episode_id: 3,
-        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4',
+        avatar_url: '/assets/images/molecule.png',
         website_url: 'https://molecule.io',
         location: 'Cape Town'
       },
@@ -44,7 +42,7 @@ const EpisodeState = props => {
         title: 'PocketJam',
         season_id: 1,
         episode_id: 4,
-        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4',
+        avatar_url: '/assets/images/pocketjam.svg',
         website_url: 'https://pocketjam.io',
         location: 'Cape Town'
       },
@@ -53,7 +51,7 @@ const EpisodeState = props => {
         title: 'Ucook',
         season_id: 1,
         episode_id: 5,
-        avatar_url: 'https://avatars1.githubusercontent.com/u/6032276?v=4',
+        avatar_url: '/assets/images/ucook.png',
         website_url: 'https://www.ucook.co.za',
         location: 'Cape Town'
       }
