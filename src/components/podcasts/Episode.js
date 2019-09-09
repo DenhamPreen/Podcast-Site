@@ -30,6 +30,9 @@ const Episode = ({ match }) => {
           <p>Location: {location}</p>
         </div>
         <div>
+          <div>
+            <h3>Chatting with:</h3>
+          </div>
           {description && (
             <Fragment>
               <h3>Company description:</h3>

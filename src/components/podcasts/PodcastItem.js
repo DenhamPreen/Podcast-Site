@@ -19,7 +19,7 @@ const PodcastItem = ({
       <div>
         <Link
           to={`/episode/${episode_id}`}
-          className='btn btn-dark btn-sm my-1'
+          className='btn btn-light btn-sm my-1'
         >
           More
         </Link>
