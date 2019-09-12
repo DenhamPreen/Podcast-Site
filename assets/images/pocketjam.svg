@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-app_logo">
+      <rect width="200" height="200"/>
+    </clipPath>
+  </defs>
+  <g id="app_logo" clip-path="url(#clip-app_logo)">
+    <rect width="200" height="200" fill="#612bcc"/>
+    <g id="Group_233" data-name="Group 233" transform="translate(-1112.5 -869.42)">
+      <path id="Path_409" data-name="Path 409" d="M1183.929,1031.777a2.229,2.229,0,0,1,4.032-.87c3.312,4.959,9.926,15.323,21.673,15.323,18.819,0,22.582-3.764,28.227-15.055s6.384,31.732,5.646,37.637c-1.882,15.055-7.527,26.346-22.582,26.346s-37.637,0-39.519-20.7C1180.11,1060.194,1182.388,1040.38,1183.929,1031.777Z" transform="translate(-1.141 -63.2)" fill="#2d165d" stroke="#421e8d" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="Path_410" data-name="Path 410" d="M1260.622,1054.843s3.382,10.936-.348,11.442-16.15-5.7-14.411-6.424C1249.573,1058.324,1251.8,1059.837,1260.622,1054.843Z" transform="translate(-30.379 -74.749)" fill="#fff"/>
+      <path id="Path_411" data-name="Path 411" d="M1295.651,1126.13s13.338,22.209,2.859,25.652-10.475-6.081-10.475-3.778,4.041,15.085-9.5,16.435S1272.1,1148,1272.1,1148,1291.043,1141.1,1295.651,1126.13Z" transform="translate(-52.786 -111.275)" fill="#00a7da"/>
+      <path id="Path_412" data-name="Path 412" d="M1203.551,1124.135s-11.829-3.227-6.452-12.9,33.283-9.637,38.715-3.227c5.013,5.916,13.98,25.81-3.227,35.489S1201.4,1135.964,1203.551,1124.135Z" transform="translate(-7.775 -96.757)" fill="#ff8ca5"/>
+      <circle id="Ellipse_60" data-name="Ellipse 60" cx="32.053" cy="32.053" r="32.053" transform="translate(1178.5 889.5)" fill="#fff" stroke="#421e8d" stroke-miterlimit="10" stroke-width="2.641"/>
+      <g id="Group_232" data-name="Group 232" transform="translate(1186.993 897.993)">
+        <circle id="Ellipse_61" data-name="Ellipse 61" cx="23.286" cy="23.286" r="23.286" transform="translate(0)" fill="#00a7da"/>
+        <circle id="Ellipse_62" data-name="Ellipse 62" cx="12.876" cy="12.876" r="12.876" transform="translate(10.192 10.287)"/>
+        <circle id="Ellipse_63" data-name="Ellipse 63" cx="2.383" cy="2.383" r="2.383" transform="translate(25.192 15.287)" fill="#fff"/>
+        <circle id="Ellipse_64" data-name="Ellipse 64" cx="3.383" cy="3.383" r="3.383" transform="translate(29.192 8.287)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
