@@ -5,7 +5,10 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Episode from './components/podcast/Episode';
 import NotFound from './components/pages/NotFound';
-import Footer from './components/layout/Footer';
+// import Footer from './components/layout/Footer';
+import Episode from './components/podcasts/Episode';
+
+import EpisodeState from './context/episode/EpisodeState';
 
 import './App.css';
 
