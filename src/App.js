@@ -11,21 +11,23 @@ import './App.css';
 
 const App = () => {
   return (
-        <Router>
-          <div className='bg-dark' style={{height:"100vh"}}>
-            <Navbar />            
-              <div>
-              <Switch>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/episodes' component={Episodes} />
-                <Route exact path='/About' component={About} />
-                <Route component={NotFound} />
-              </Switch>
-              {/* <Footer/>             */}
-              </div>
+    <EpisodeState>
+      <Router>
+        <div className='bg-dark' style={{ height: '100vh' }}>
+          <Navbar />
+          <div className='container'>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/episode/:path' component={Episode} />
+              <Route exact path='/About' component={About} />
+              <Route component={NotFound} />
+            </Switch>
+            {/* <Footer/>             */}
           </div>
-        </Router>
-    );
+        </div>
+      </Router>
+    </EpisodeState>
+  );
 };
 
 export default App;
