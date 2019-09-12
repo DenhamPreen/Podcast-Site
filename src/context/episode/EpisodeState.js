@@ -71,7 +71,7 @@ const EpisodeState = props => {
   const getEpisode = async path => {
     dispatch({
       type: GET_EPISODE,
-      payload: state.episodes.find(obj => obj.path == path)
+      payload: state.episodes.find(episode => episode.path == path)
     });
   };
 
