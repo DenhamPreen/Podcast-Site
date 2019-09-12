@@ -1,9 +1,11 @@
-import React, { useEffect, useContext, Fragment } from 'react';
+import React, { useEffect, useContext, Fragment, useState } from 'react';
 import EpisodeContext from '../../context/episode/episodeContext';
 import { Link } from 'react-router-dom';
 
 const Episode = ({ match }) => {
   const episodeContext = useContext(EpisodeContext);
+
+  const [listenEpisodeText, updateListenEpisodeText] = useState('Play Podcast')
 
   const { getEpisode, episode } = episodeContext;
 
@@ -11,7 +13,7 @@ const Episode = ({ match }) => {
     getEpisode(match.params.path);
   }, []);
 
-  const { title, description, avatar_url, website_url, location } = episode;
+  const { title, description, avatar_url, website_url, location, speaker } = episode;
 
   return (
     <Fragment>
@@ -31,7 +33,7 @@ const Episode = ({ match }) => {
         </div>
         <div>
           <div>
-            <h3>Chatting with:</h3>
+            <h3>Chatting with: {speaker}</h3>
           </div>
           {description && (
             <Fragment>
@@ -43,15 +45,22 @@ const Episode = ({ match }) => {
             Visit website
           </a>
           <div>
-            <button className='btn btn-dark my-1'> Play podcast button </button>
+            <button
+              className='btn btn-dark my-1'
+              onMouseEnter={()=>(updateListenEpisodeText('Coming Soon'))}
+              onMouseLeave={()=>(updateListenEpisodeText('Play Podcast'))}
+              disabled
+              >
+              {listenEpisodeText}
+            </button>
           </div>
         </div>
       </div>
-      <div className='card'>
+      {/* <div className='card'>
         <h3>Episode details:</h3>
         <h3>Chatting with:</h3>
         <h3>Some other information:</h3>
-      </div>
+      </div> */}
     </Fragment>
   );
 };

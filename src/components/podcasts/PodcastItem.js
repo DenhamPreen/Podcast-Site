@@ -14,7 +14,10 @@ const PodcastItem = ({
       />
       <h3>{title}</h3>
       <h6>
-        s{season_id}e{episode_id}
+        Season: {season_id}
+      </h6>
+      <h6>
+        Episode: {episode_id}
       </h6>
       <div>
         <Link
