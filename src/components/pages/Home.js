@@ -18,11 +18,18 @@ const Home = () => {
       <h4>
         Interesting in learning from the top minds that formulated some of the most innovative startups?
 <br />
-        You've come to the right place. Denham and JonJon talk to founders and leaders of tech start ups that are disrupting their industries.
+        You've come to the right place. Denham and JonJon talk to founders and leaders of tech start ups that are disrupting their industries.</h4>
 <br />
-        Season 1 focusses on start ups based in Cape Town, South Africa.      </h4>
-
+       <h3>
+       Season 1 focusses on start ups based in Cape Town, South Africa.    
+         </h3> 
       <Podcasts />
+      <br />
+      <br />
+        <h3>Coming Soon...</h3>
+      <h4>
+       Season 2 focusses on global tech start ups based in the worlds largest start up campus, Station F in Paris    
+         </h4> 
     </div>
   );
 };

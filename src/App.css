@@ -127,6 +127,12 @@ img {
   margin: 0.7rem 0;
 }
 
+.card-light {
+  padding: 2rem;
+  border: #ccc 2px dotted;
+  margin: 0.7rem 0;
+}
+
 /* List */
 .list {
   margin: 0.5rem 0;

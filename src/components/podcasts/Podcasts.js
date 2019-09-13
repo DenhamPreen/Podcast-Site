@@ -8,7 +8,7 @@ const Podcasts = () => {
   const { episodes } = episodeContext;
 
   return (
-    <div style={episodeStyle}>
+    <div className="card-light" style={episodeStyle}>
       {episodes.map(episode => (
         <PodcastItem key={episode.path} episode={episode} />
       ))}
@@ -18,8 +18,9 @@ const Podcasts = () => {
 
 const episodeStyle = {
   display: 'grid',
-  gridTemplateColumns: 'repeat(3,1fr)',
-  gridGap: '1rem'
+  gridTemplateColumns: "repeat(auto-fill,minmax(250px, 1fr))",
+  gridGap: '1rem',
+  objectFit: "cover"
 };
 
 export default Podcasts;
