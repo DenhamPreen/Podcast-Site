@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import PodcastItem from './PodcastItem';
-import EpisodeContext from '../../context/episode/episodeContext';
+import React, { useContext } from "react";
+import PodcastItem from "./PodcastItem";
+import EpisodeContext from "../../context/episode/episodeContext";
 
 const Podcasts = () => {
   const episodeContext = useContext(EpisodeContext);
@@ -17,9 +17,10 @@ const Podcasts = () => {
 };
 
 const episodeStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3,1fr)',
-  gridGap: '1rem'
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill,minmax(250px, 1fr))",
+  gridGap: "1rem",
+  objectFit: "cover"
 };
 
 export default Podcasts;
