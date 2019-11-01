@@ -1,9 +1,9 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from "react";
 //import applePodcastsImg from '../../img/applepodcasts.png';
 //import spotifyPodcastsImg from '../../img/spotifypodcasts.png';
 //import googlePodcastsImg from '../../img/googlepodcasts.png';
-import Podcasts from '../podcasts/Podcasts';
-import EpisodeContext from '../../context/episode/episodeContext';
+import Podcasts from "../podcasts/Podcasts";
+import EpisodeContext from "../../context/episode/episodeContext";
 
 const Home = () => {
   const episodeContext = useContext(EpisodeContext);
@@ -13,14 +13,16 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='text-center'>
-      <h2>Meet the founders</h2>      
-      <h4>
-        Interesting in learning from the top minds that formulated some of the most innovative startups?
-<br />
-        You've come to the right place. Denham and JonJon talk to founders and leaders of tech start ups that are disrupting their industries.
-<br />
-        Season 1 focusses on start ups based in Cape Town, South Africa.      </h4>
+    <div className="text-center">
+      {/* <h2>Meet the founders</h2> */}
+      <h5>
+        Interesting in learning from top minds who founded innovative startups?
+        <br />
+        Denham and JonJon bring you the inside scoop from the founders of the
+        hottest tech start ups in the industry.
+      </h5>
+      <br />
+      <h6>Season 1 focusses on start ups based in Cape Town, South Africa. </h6>
 
       <Podcasts />
     </div>

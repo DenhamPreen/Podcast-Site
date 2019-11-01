@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
   return (
-    <div className='container'>
-      <h2> About Denham & Jon Jon </h2>
+    <div className="container">
+      <h2> Where it started? </h2>
       <br />
       <p>
         Denham and Jon Jon met in their computer science honours class. Denham
@@ -13,19 +13,28 @@ const About = () => {
       </p>
       <br />
       <p>
-        Together they are currently working on{' '}
-        <a href='https://wildcards.world?ref=podcast'>wildcards.world</a> and
-        <a href='https://alwaysforsale.io?ref=podcast'>
-          &nbsp;alwaysforsale.io
-        </a>{' '}
-        - 2 unique projects that combine interesting incentive mechanisms. The
-        success of these projects has led them to a move to Station F in Paris
-        where they will continue to build.
+        Check out one of there current projects {""}
+        <a href="https://wildcards.world?ref=podcast">wildcards.world</a> that
+        raises funding for animal conservation.
       </p>
       <br />
-      <p>Get in touch with us:</p>
-      <p>jonjonclark@gmail.com </p>
-      <p>denhampreen@gmail.com</p>
+      <h3>Get in touch and find out more:</h3>
+      <h5>jonjonclark@gmail.com </h5>
+      <a
+        href={"https://jonjonclark.com"}
+        className="btn btn-dark my-1"
+        target="_blank"
+      >
+        Jonjon's website
+      </a>
+      <h5>denhampreen@gmail.com</h5>
+      <a
+        href={"https://denhampreen@gmail.com"}
+        className="btn btn-dark my-1"
+        target="_blank"
+      >
+        Denham's website
+      </a>
       <br />
     </div>
   );
