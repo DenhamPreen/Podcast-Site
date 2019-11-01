@@ -41,8 +41,7 @@ const Episode = ({ match }) => {
         </div>
         <div>
           <div>
-            <h4>Chatting with:</h4>
-            <h5>{speaker}</h5>
+            <h4>Chatting with: <small>{speaker}</small></h4>
           </div>
           {description && (
             <Fragment>
@@ -50,18 +49,18 @@ const Episode = ({ match }) => {
               <h5>{description}</h5>
             </Fragment>
           )}
-          <a href={website_url} className="btn btn-dark my-1" target="_blank">
-            Visit website
-          </a>
-          <div>
-            <button
-              className="btn btn-dark my-1"
+            <a            
               onMouseEnter={() => updateListenEpisodeText("Coming Soon")}
               onMouseLeave={() => updateListenEpisodeText("Play Podcast")}
               disabled
             >
-              {listenEpisodeText}
-            </button>
+           Coming Soon 
+            </a>
+          <a href={website_url} className="btn btn-dark my-1" target="_blank">
+            Visit website
+          </a>
+          
+            <div>
           </div>
         </div>
       </div>

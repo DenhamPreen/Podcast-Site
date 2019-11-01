@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PodcastItem = ({
-  episode: { title, season_id, episode_id, avatar_url, description, path }
+  episode: { title, episode_id, avatar_url, path, speaker }
 }) => {
   return (
-    <div className='card text-center'>
+    <Link
+    to={`/episode/${path}`}
+  ><div className='card text-center hover-card'>
       <img
         src={avatar_url}
         alt=''
@@ -14,11 +16,9 @@ const PodcastItem = ({
       />
       <h3>{title}</h3>
       <h6>
-        Season: {season_id}
+        {speaker}
       </h6>
-      <h6>
-        Episode: {episode_id}
-      </h6>
+      <p style={{fontSize: '0.8rem'}}><small>Episode: {episode_id}</small></p>
       <div>
         <Link
           to={`/episode/${path}`}
@@ -28,6 +28,7 @@ const PodcastItem = ({
         </Link>
       </div>
     </div>
+    </Link>
   );
 };
 

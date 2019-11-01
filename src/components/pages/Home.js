@@ -14,16 +14,14 @@ const Home = () => {
 
   return (
     <div className="text-center">
-      {/* <h2>Meet the founders</h2> */}
-      <h5>
+      <h3>
         Interesting in learning from top minds who founded innovative startups?
-        <br />
+      </h3>
+        <h4>
         Denham and JonJon bring you the inside scoop from the founders of the
-        hottest tech start ups in the industry.
-      </h5>
-      <br />
-      <h6>Season 1 focusses on start ups based in Cape Town, South Africa. </h6>
-
+        hottest tech start ups in their podcast where it started.
+        </h4>          
+        <br/>
       <Podcasts />
     </div>
   );

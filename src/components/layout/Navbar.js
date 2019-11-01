@@ -6,14 +6,15 @@ const Navbar = ({ icon, title }) => {
   return (
     <nav className="navbar" style={{ height: "10vh" }}>
       <h1>
-        <i className={icon} /> {title}
+        <i className={icon} />  {' '}
+        {title}
       </h1>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">about</Link>
         </li>
       </ul>
     </nav>
@@ -21,7 +22,7 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: " Where It Started",
+  title: "where it started",
   icon: "fas fa-podcast"
 };
 

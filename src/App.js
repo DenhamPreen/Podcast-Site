@@ -15,7 +15,7 @@ const App = () => {
   return (
     <EpisodeState>
       <Router>
-        <div className='bg-dark' style={{ minHeight: '100vh' }}>
+        <div className='bg-dark-with-gradient' style={{ minHeight: '100vh' }}>
           <Navbar />
           <div className='container'>
             <Switch>

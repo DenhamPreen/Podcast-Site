@@ -18,8 +18,8 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.4rem;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
@@ -123,8 +123,15 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
+  margin: 0.3rem 0.3rem;
+}
+
+.hover-card{
   border: #ccc 1px dotted;
-  margin: 0.7rem 0;
+}
+
+.hover-card:hover {
+  background-color: rgba(255,255,255, 0.1);
 }
 
 /* List */
@@ -215,7 +222,7 @@ img {
   font-size: 1rem;
   border: none;
   cursor: pointer;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
 }
@@ -277,6 +284,14 @@ img {
 .badge-dark,
 .alert-dark {
   background: rgba(34, 34, 34, 0.548);
+  color: rgb(255, 255, 255);
+}
+
+.bg-dark-with-gradient{
+  background: #03132D;
+  /* background: -webkit-linear-gradient(45deg,#282F36,#021534 60%);
+  background: linear-gradient(45deg,#282F36,#021534 60%); */
+  background-image: linear-gradient(to right bottom, #03132D,#005F95), linear-gradient(transparent, #03132D 70%);
   color: rgb(255, 255, 255);
 }
 
@@ -373,7 +388,7 @@ table th {
   z-index: 1;
   width: 100%;
   opacity: 0.9;
-  margin-bottom: 1rem;
+  margin-bottom: 2.6rem;
 }
 
 .navbar ul {
@@ -390,7 +405,7 @@ a {
 }
 
 a:hover {
-  color: var(--light-color);
+  color: #fff;
 }
 
 .navbar .welcome span {
@@ -431,12 +446,7 @@ a:hover {
   .navbar ul {
     text-align: center;
     justify-content: center;
-    text-transform: uppercase;
   }
-}
-
-.navbar ul {
-  text-transform: uppercase;
 }
 
 .footer-player {
