@@ -62,10 +62,24 @@ const EpisodeState = props => {
           "Strap yourself in, this one is for the technical folks, where Kent discusses the crazy awesome tech they are building at molecule.  "
       },
       {
+        path: "future-females",
+        title: "Future Females",
+        season_id: 1,
+        episode_id: 5,
+        description:
+          "We aim to increase the number of and success of female entrepreneurs.",
+        avatar_url: "/assets/images/future.png",
+        website_url: "https://futurefemales.co",
+        speaker: "Co-founder, Lauren Dallas",
+        location: "Cape Town, South Africa",
+        episode_description:
+          "Lauren tells us about her travels around the world and journey to starting the worldwide movement, future females. This inspiring chat is one not to miss. "
+      },
+      {
         path: "pocket-jam",
         title: "PocketJam",
         season_id: 1,
-        episode_id: 5,
+        episode_id: 6,
         description:
           "PocketJam is an app that teaches your child to earn and save their pocket money using math challenges and savings rewards.",
         avatar_url: "/assets/images/pocketjam.svg",
@@ -79,7 +93,7 @@ const EpisodeState = props => {
         path: "ucook",
         title: "Ucook",
         season_id: 1,
-        episode_id: 6,
+        episode_id: 7,
         description:
           "UCOOK delivers fresh ingredients directly to your home so you can make delicious meals in exactly the right proportions. We deliver your ingredients for the week every Monday.",
         avatar_url: "/assets/images/ucook.png",

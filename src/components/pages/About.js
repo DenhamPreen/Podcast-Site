@@ -29,7 +29,7 @@ const About = () => {
       </a>
       <h5>denhampreen@gmail.com</h5>
       <a
-        href={"https://denhampreen@gmail.com"}
+        href={"https://denhampreen.com"}
         className="btn btn-dark my-1"
         target="_blank"
       >
