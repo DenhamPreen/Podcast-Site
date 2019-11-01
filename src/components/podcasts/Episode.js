@@ -19,7 +19,8 @@ const Episode = ({ match }) => {
     avatar_url,
     website_url,
     location,
-    speaker
+    speaker,
+    episode_description
   } = episode;
 
   return (
@@ -64,11 +65,10 @@ const Episode = ({ match }) => {
           </div>
         </div>
       </div>
-      {/* <div className='card'>
-        <h3>Episode details:</h3>
-        <h3>Chatting with:</h3>
-        <h3>Some other information:</h3>
-      </div> */}
+      <div className="card">
+        <h4>Episode description:</h4>
+        <h5>{episode_description}</h5>
+      </div>
     </Fragment>
   );
 };
