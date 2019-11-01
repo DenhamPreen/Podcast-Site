@@ -48,24 +48,10 @@ const EpisodeState = props => {
           "Alexandria speaks in this hilarious episode on what worked and didn't work on her journey to set up DigsConnect. Find out why digsconnect brought 10 000 rolls of branded toilet paper in from China amongst other amazings ways this start up goes about succeeding. We also here about the journey to raise funding from Alexandria. This is one you don't want to miss."
       },
       {
-        path: "molecule",
-        title: "Molecule",
-        season_id: 1,
-        episode_id: 4,
-        description:
-          "Molecule is a software platform to accelerate innovation in the pharmaceutical industry. It connects scientists, patients and industry to advance drug development in a collaborative open market.",
-        avatar_url: "/assets/images/molecule.png",
-        website_url: "https://molecule.to",
-        speaker: "Head of Tech, Kent Fourie",
-        location: "Cape Town, South Africa",
-        episode_description:
-          "Strap yourself in, this one is for the technical folks, where Kent discusses the crazy awesome tech they are building at molecule.  "
-      },
-      {
         path: "future-females",
         title: "Future Females",
         season_id: 1,
-        episode_id: 5,
+        episode_id: 4,
         description:
           "We aim to increase the number of and success of female entrepreneurs.",
         avatar_url: "/assets/images/future.png",
@@ -79,7 +65,7 @@ const EpisodeState = props => {
         path: "pocket-jam",
         title: "PocketJam",
         season_id: 1,
-        episode_id: 6,
+        episode_id: 5,
         description:
           "PocketJam is an app that teaches your child to earn and save their pocket money using math challenges and savings rewards.",
         avatar_url: "/assets/images/pocketjam.svg",
@@ -93,7 +79,7 @@ const EpisodeState = props => {
         path: "ucook",
         title: "Ucook",
         season_id: 1,
-        episode_id: 7,
+        episode_id: 6,
         description:
           "UCOOK delivers fresh ingredients directly to your home so you can make delicious meals in exactly the right proportions. We deliver your ingredients for the week every Monday.",
         avatar_url: "/assets/images/ucook.png",
@@ -102,6 +88,20 @@ const EpisodeState = props => {
         location: "Cape Town, South Africa",
         episode_description:
           "Dave details the hilarious and successful story of Ucook in this episode. From delivering there first boxes straight from the garage without a recipe card, to shipping out tens of thousands of boxes every month. Find out where it started."
+      },
+      {
+        path: "molecule",
+        title: "Molecule",
+        season_id: 1,
+        episode_id: 7,
+        description:
+          "Molecule is a software platform to accelerate innovation in the pharmaceutical industry. It connects scientists, patients and industry to advance drug development in a collaborative open market.",
+        avatar_url: "/assets/images/molecule.png",
+        website_url: "https://molecule.to",
+        speaker: "Head of Tech, Kent Fourie",
+        location: "Cape Town, South Africa",
+        episode_description:
+          "Strap yourself in, this one is for the technical folks, where Kent discusses the crazy awesome tech they are building at molecule.  "
       }
     ],
     episode: {}
