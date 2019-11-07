@@ -59,7 +59,7 @@ const Episode = ({ match }) => {
                 playEpisode(podcast_embed_url);
               }}
             >
-              Play Episode
+              Open Episode
             </a>
           )}
           <a href={website_url} className="btn btn-dark my-1" target="_blank">
