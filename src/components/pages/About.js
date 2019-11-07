@@ -6,8 +6,8 @@ const About = () => {
       <h2> Where it started? </h2>
       <br />
       <p>
-        Denham and Jon Jon met in their computer science honours class. Jon Jon
-        looked like he had no friends and Denham took a leap of faith and
+        Denham and Jon Jon met in their computer science honours class. Denham
+        looked like he had no friends and Jon Jon took a leap of faith and
         invited him to join the cool kids for lunch. They have been building
         exciting things ever since.
       </p>

@@ -21,7 +21,7 @@ const episodeStyle = {
   gridTemplateColumns: "repeat(auto-fill,minmax(250px, 1fr))",
   gridGap: "1rem",
   objectFit: "cover",
-  paddingBottom: '3rem'
+  paddingBottom: "3rem"
 };
 
 export default Podcasts;

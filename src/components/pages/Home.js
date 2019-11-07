@@ -15,13 +15,13 @@ const Home = () => {
   return (
     <div className="text-center">
       <h3>
-        Interesting in learning from top minds who founded innovative startups?
+        Interested in learning from top minds who founded innovative startups?
       </h3>
-        <h4>
+      <h4>
         Denham and JonJon bring you the inside scoop from the founders of the
         hottest tech start ups in their podcast where it started.
-        </h4>          
-        <br/>
+      </h4>
+      <br />
       <Podcasts />
     </div>
   );

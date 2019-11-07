@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /* Global Styles */
 :root {
@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
   line-height: 1.6;
   background-color: #fff;
@@ -126,12 +126,12 @@ img {
   margin: 0.3rem 0.3rem;
 }
 
-.hover-card{
+.hover-card {
   border: #ccc 1px dotted;
 }
 
 .hover-card:hover {
-  background-color: rgba(255,255,255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* List */
@@ -287,11 +287,12 @@ img {
   color: rgb(255, 255, 255);
 }
 
-.bg-dark-with-gradient{
-  background: #03132D;
+.bg-dark-with-gradient {
+  background: #03132d;
   /* background: -webkit-linear-gradient(45deg,#282F36,#021534 60%);
   background: linear-gradient(45deg,#282F36,#021534 60%); */
-  background-image: linear-gradient(to right bottom, #03132D,#005F95), linear-gradient(transparent, #03132D 70%);
+  background-image: linear-gradient(to right bottom, #03132d, #005f95),
+    linear-gradient(transparent, #03132d 70%);
   color: rgb(255, 255, 255);
 }
 
@@ -351,10 +352,10 @@ input {
   color: #888;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='password'],
-input[type='date'],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
 select,
 textarea {
   display: block;
@@ -364,7 +365,7 @@ textarea {
   border: 1px solid #ccc;
 }
 
-input[type='submit'],
+input[type="submit"],
 button {
   font: inherit;
 }
@@ -450,12 +451,12 @@ a:hover {
 }
 
 .footer-player {
-  height: 10vh;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--primary-color);
+  transition-timing-function: ease-in;
+  transition: 0.5s;
 }
 
 .home h1 {

@@ -1,18 +1,42 @@
-import React from 'react'
-import ReactAudioPlayer from 'react-audio-player'
-import testAudio from '../../episodes/test.mp3'
+import React, { useContext, useEffect } from "react";
+import HamburgerMenu from "react-hamburger-menu";
+import EpisodeContext from "../../context/episode/episodeContext";
 
 const Footer = () => {
-    return (
-        <footer className='footer-player'>
-            <center>
-                <ReactAudioPlayer
-                    src="https://www.soundboard.com/handler/DownLoadTrack.ashx?cliptitle=Sassy+-+wot+r+u+talkin+bout+(THE+BIG+LEZ+SHOW)&filename=23/234496-a4374071-a192-4aa3-ab5f-ea4e7d1e0b66.mp3"
-                    controls
-                />
-            </center>
-        </footer>
-    )
-}
+  const episodeContext = useContext(EpisodeContext);
+  const { currentlyPlaying, openPlayer, openThePlayer } = episodeContext;
 
-export default Footer
+  return (
+    <footer
+      className="footer-player"
+      style={{ height: !openPlayer ? "180px" : "34px" }}
+    >
+      <HamburgerMenu
+        isOpen={!openPlayer}
+        menuClicked={() => {
+          openThePlayer();
+        }}
+        width={30}
+        height={30}
+        strokeWidth={3}
+        rotate={0}
+        color="white"
+        borderRadius={0}
+        animationDuration={0.5}
+        style={{ float: "right" }}
+      />
+      <center>
+        <iframe
+          src={currentlyPlaying}
+          width="100%"
+          height="150"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </center>
+    </footer>
+  );
+};
+
+export default Footer;

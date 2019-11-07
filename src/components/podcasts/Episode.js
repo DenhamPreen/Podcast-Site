@@ -1,13 +1,11 @@
-import React, { useEffect, useContext, Fragment, useState } from "react";
+import React, { useEffect, useContext, Fragment } from "react";
 import EpisodeContext from "../../context/episode/episodeContext";
 import { Link } from "react-router-dom";
 
 const Episode = ({ match }) => {
   const episodeContext = useContext(EpisodeContext);
 
-  const [listenEpisodeText, updateListenEpisodeText] = useState("Play Podcast");
-
-  const { getEpisode, episode } = episodeContext;
+  const { getEpisode, episode, playEpisode } = episodeContext;
 
   useEffect(() => {
     getEpisode(match.params.path);
@@ -20,7 +18,8 @@ const Episode = ({ match }) => {
     website_url,
     location,
     speaker,
-    episode_description
+    episode_description,
+    podcast_embed_url
   } = episode;
 
   return (
@@ -41,7 +40,9 @@ const Episode = ({ match }) => {
         </div>
         <div>
           <div>
-            <h4>Chatting with: <small>{speaker}</small></h4>
+            <h4>
+              Chatting with: <small>{speaker}</small>
+            </h4>
           </div>
           {description && (
             <Fragment>
@@ -49,19 +50,23 @@ const Episode = ({ match }) => {
               <h5>{description}</h5>
             </Fragment>
           )}
-            <a            
-              onMouseEnter={() => updateListenEpisodeText("Coming Soon")}
-              onMouseLeave={() => updateListenEpisodeText("Play Podcast")}
-              disabled
+          {podcast_embed_url == "" ? (
+            <a>Coming Soon</a>
+          ) : (
+            <a
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                playEpisode(podcast_embed_url);
+              }}
             >
-           Coming Soon 
+              Play Episode
             </a>
+          )}
           <a href={website_url} className="btn btn-dark my-1" target="_blank">
             Visit website
           </a>
-          
-            <div>
-          </div>
+
+          <div></div>
         </div>
       </div>
       <div className="card">
