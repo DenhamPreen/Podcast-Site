@@ -22,7 +22,7 @@ const EpisodeState = props => {
         spotify_url:
           "https://open.spotify.com/show/1QaspSzirKAqrKXdPzxNjv?si=P9DmGPOERKSnRF4sa6Q8aA",
         podcast_embed_url:
-          "https://open.spotify.com/embed-podcast/show/1QaspSzirKAqrKXdPzxNjv"
+          "https://open.spotify.com/embed-podcast/episode/1M6RwCsv4hsKRu2JooF9GM"
       },
       {
         path: "house-me",
@@ -36,9 +36,10 @@ const EpisodeState = props => {
         speaker: "Co-founder Kyle Bradley",
         location: "Cape Town, South Africa",
         episode_description:
-          "Winning start up of the year in 2018 in Cape Town, Kyle sheds light on the idea of HouseMe and how they are disrupting the current housing industry. We talk past struggles, future plans, and best advice for those looking to shake up an industry.",
-        spotify_url: "",
-        podcast_embed_url: ""
+          "Winning start up of the year in 2018 in Cape Town, Kyle sheds light on the idea of HouseME and how they are disrupting the current housing industry. We talk past struggles, future plans, and best advice for those looking to shake up an industry.",
+        spotify_url: "https://open.spotify.com/episode/3kPQX27ZGQMnA604wdeMwh",
+        podcast_embed_url:
+          "https://open.spotify.com/embed-podcast/episode/3kPQX27ZGQMnA604wdeMwh"
       },
       {
         path: "digs-connect",

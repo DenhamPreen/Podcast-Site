@@ -25,13 +25,10 @@ const App = () => {
               <Route exact path="/About" component={About} />
               <Route component={NotFound} />
             </Switch>
-            {isTablet ||
-              (isDesktop && (
-                <Fragment>
-                  <div style={{ height: "156px" }}></div>
-                  <Footer />
-                </Fragment>
-              ))}
+            <Fragment>
+              <div style={{ height: "156px" }}></div>
+              <Footer />
+            </Fragment>
           </div>
         </div>
       </Router>
