@@ -52,7 +52,7 @@ const EpisodeState = props => {
         speaker: "Co-founder & CEO Alexandria Procter",
         location: "Cape Town, South Africa",
         episode_description:
-          "Alexandria speaks in this hilarious episode on what worked and didn't work on her journey to set up DigsConnect. Find out why digsconnect brought 10 000 rolls of branded toilet paper in from China amongst other amazing ways this start up goes about succeeding. We also hear about the journey to raise funding from Alexandria. This is one you don't want to miss.",
+          "Alexandria speaks in this hilarious episode on what worked and didn't work on her journey to set up Digs Connect. Find out why Digs Connect brought 10 000 rolls of branded toilet paper in from China amongst other amazing ways this start up goes about succeeding. We also hear about the journey to raise funding from Alexandria. This is one you don't want to miss.",
         spotify_url: "",
         podcast_embed_url: ""
       },
