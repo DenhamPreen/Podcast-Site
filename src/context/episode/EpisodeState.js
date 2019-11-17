@@ -74,7 +74,7 @@ const EpisodeState = props => {
       },
       {
         path: "ucook",
-        title: "Ucook",
+        title: "UCOOK",
         season_id: 1,
         episode_id: 5,
         description:
@@ -84,7 +84,7 @@ const EpisodeState = props => {
         speaker: "Co-founder David Torr",
         location: "Cape Town, South Africa",
         episode_description:
-          "Dave details the hilarious and successful story of Ucook in this episode. From delivering there first boxes straight from the garage without a recipe card, to shipping out tens of thousands of boxes every month. Find out where it started.",
+          "Dave details the hilarious and successful story of UCOOK in this episode. From delivering their first boxes straight from the garage without a recipe card, to shipping out tens of thousands of boxes every month. Find out where it started.",
         spotify_url: "",
         podcast_embed_url: ""
       },
