@@ -68,7 +68,7 @@ const EpisodeState = props => {
         speaker: "Co-founder Nick Hill",
         location: "Cape Town, South Africa",
         episode_description:
-          "Nick tells us all about the pocket jam experience, from a small proof of concept, to an incubator overseas in Switzerland. Get he inside scoop on how to bring your ideas to life!",
+          "Nick tells us all about the pocket jam experience, from a small proof of concept, to an incubator overseas in Switzerland. Get the inside scoop on how to bring your ideas to life!",
         spotify_url: "",
         podcast_embed_url: ""
       },
