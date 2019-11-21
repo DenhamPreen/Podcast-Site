@@ -53,8 +53,9 @@ const EpisodeState = props => {
         location: "Cape Town, South Africa",
         episode_description:
           "Alexandria speaks in this hilarious episode on what worked and didn't work on her journey to set up Digs Connect. Find out why Digs Connect brought 10 000 rolls of branded toilet paper in from China amongst other amazing ways this start up goes about succeeding. We also hear about the journey to raise funding from Alexandria. This is one you don't want to miss.",
-        spotify_url: "",
-        podcast_embed_url: ""
+        spotify_url: "https://open.spotify.com/episode/3EUqvjNqJEx1hORHGUDIwg",
+        podcast_embed_url:
+          "https://open.spotify.com/embed-podcast/episode/3EUqvjNqJEx1hORHGUDIwg"
       },
       {
         path: "pocket-jam",
@@ -122,7 +123,7 @@ const EpisodeState = props => {
     ],
     episode: {},
     currentlyPlaying:
-      "https://open.spotify.com/embed-podcast/show/1QaspSzirKAqrKXdPzxNjv",
+      "https://open.spotify.com/embed-podcast/episode/3EUqvjNqJEx1hORHGUDIwg",
     openPlayer: false
   };
 
