@@ -70,8 +70,9 @@ const EpisodeState = props => {
         location: "Cape Town, South Africa",
         episode_description:
           "Nick tells us all about the pocket jam experience, from a small proof of concept, to an incubator overseas in Switzerland. Get the inside scoop on how to bring your ideas to life!",
-        spotify_url: "",
-        podcast_embed_url: ""
+        spotify_url: "https://open.spotify.com/episode/7LAYiMH7KChSMUAArA2wWn",
+        podcast_embed_url:
+          "https://open.spotify.com/embed-podcast/episode/7LAYiMH7KChSMUAArA2wWn"
       },
       {
         path: "ucook",
@@ -123,7 +124,7 @@ const EpisodeState = props => {
     ],
     episode: {},
     currentlyPlaying:
-      "https://open.spotify.com/embed-podcast/episode/3EUqvjNqJEx1hORHGUDIwg",
+      "https://open.spotify.com/embed-podcast/episode/7LAYiMH7KChSMUAArA2wWn",
     openPlayer: false
   };
 
